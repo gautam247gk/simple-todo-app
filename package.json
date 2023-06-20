@@ -2,7 +2,7 @@
   "name": "simple-todo-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gautam247gk.github.io/simple-todo-list",
+  "homepage": "https://gautam247gk.github.io/simple-todo-app/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
