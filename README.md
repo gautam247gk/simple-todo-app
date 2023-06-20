@@ -1,6 +1,6 @@
 # Simple TODO App
 
-This is a simple TODO app that allows you to add, edit, and delete tasks. It also allows you to mark tasks as complete. The app is built using React and SASS. The app is deployed on Github Pages and can be accessed [here](https://gautam247gk.github.io/simple-todo-list).
+This is a simple TODO app that allows you to add, edit, and delete tasks. It also allows you to mark tasks as complete. The app is built using React and SASS. The app is deployed on Github Pages and can be accessed [here](https://gautam247gk.github.io/simple-todo-app/).
 
 ## Libraries Used
 
