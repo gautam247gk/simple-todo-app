@@ -1,0 +1,51 @@
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+  .todo-input {
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .todo-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+
+    background-color: #55b757;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #419e4c;
+    }
+  }
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+
+  .filter-todo {
+    padding: 8px;
+    margin-left: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+  }
+}
