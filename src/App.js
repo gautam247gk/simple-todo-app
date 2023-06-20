@@ -49,7 +49,10 @@ function App() {
   };
   return (
     <div className={styles.App}>
-      <header>Simple To do List</header>
+      <header>
+        Simple <br></br>To do List
+      </header>
+
       <div className={styles.container}>
         <InputBar
           todos={todos}
