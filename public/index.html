@@ -8,11 +8,36 @@
       name="description"
       content="This is a simple TODO app that allows you to add, edit, and delete tasks. It also allows you to mark tasks as complete. The app is built using React and SASS."
     />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%PUBLIC_URL%/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%PUBLIC_URL%/icons/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="%PUBLIC_URL%/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -37,5 +62,25 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- service worker register -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("%PUBLIC_URL%/serviceWorker.js")
+            .then(
+              function (registration) {
+                console.log(
+                  "ServiceWorker registration successful with scope: ",
+                  registration.scope
+                );
+              },
+              function (err) {
+                console.log("ServiceWorker registration failed: ", err);
+              }
+            );
+        });
+      }
+    </script>
   </body>
 </html>
